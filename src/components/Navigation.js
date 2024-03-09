@@ -11,7 +11,15 @@ function Navigation() {
                 <li>
                     <Link to="/about">À propos</Link>
                 </li>
-                {/* Ajoute d'autres liens de navigation si nécessaire */}
+                <li>
+                    <Link to="/music">Musiques</Link>
+                </li>
+                <li>
+                    <Link to="/films">films</Link>
+                </li>
+                <li>
+                    <Link to="/exercises">Exercices</Link>
+                </li>
             </ul>
         </nav>
     );
