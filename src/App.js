@@ -5,6 +5,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import About from './components/About'; // Assure-toi d'importer correctement le composant About depuis son emplacement
+import Home from './components/Home';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <div className="App">
         <Navigation />
         <header className="App-header">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
           {/* Utilise <Routes> pour envelopper tes routes */}
           <Routes>
             <Route path="/about" element={<About />} />
