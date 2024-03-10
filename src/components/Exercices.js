@@ -43,6 +43,12 @@ function Exercices() {
         }
     };
 
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            ajouterElementListeCourses();
+        }
+    };
+
     const supprimerElementListeCourses = (index) => {
         const nouvelleListe = [...listeCourses];
         nouvelleListe.splice(index, 1); // Supprime l'élément à l'index spécifié
@@ -79,7 +85,12 @@ function Exercices() {
             <div>
                 <h2>Liste de courses</h2>
                 {/* Champ texte pour ajouter un nouvel élément à la liste de courses */}
-                <input type="text" value={nouvelElement} onChange={handleChangeNouvelElement} />
+                <input
+                    type="text"
+                    value={nouvelElement}
+                    onChange={handleChangeNouvelElement}
+                    onKeyDown={handleKeyPress} // Gérer l'appui sur la touche "Entrée"
+                />
                 <button onClick={ajouterElementListeCourses}>Ajouter</button>
                 {/* Bouton pour remettre la liste de courses à vide */}
                 <button onClick={resetListeCourses}>Remettre la liste à vide</button>
@@ -98,6 +109,7 @@ function Exercices() {
 }
 
 export default Exercices;
+
 
 
 
