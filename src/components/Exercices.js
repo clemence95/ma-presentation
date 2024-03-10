@@ -1,10 +1,10 @@
-// Exercices.js
 import React, { useState } from 'react';
 
 function Exercices() {
     const [nom, setNom] = useState('');
     const [prenom, setPrenom] = useState('');
     const [message, setMessage] = useState('');
+    const [count, setCount] = useState(0); // Ajouter l'état pour le compteur
 
     const handleChangeNom = (event) => {
         setNom(event.target.value);
@@ -16,6 +16,14 @@ function Exercices() {
 
     const handleClickBonjour = () => {
         setMessage(`Bonjour ${nom} ${prenom}`);
+    };
+
+    const incrementCounter = () => {
+        setCount(count + 1);
+    };
+
+    const resetCounter = () => {
+        setCount(0);
     };
 
     return (
@@ -36,8 +44,16 @@ function Exercices() {
                 <button onClick={handleClickBonjour}>Bonjour</button>
             </div>
             <div>{message}</div>
+            
+            {/* Affichage du compteur */}
+            <div>
+                <h2>Compteur: {count}</h2>
+                <button onClick={incrementCounter}>Incrémenter</button>
+                <button onClick={resetCounter}>Remettre à zéro</button> {/* Bouton pour remettre le compteur à zéro */}
+            </div>
         </div>
     );
 }
 
 export default Exercices;
+
