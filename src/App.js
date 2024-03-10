@@ -1,14 +1,9 @@
-// App.js
-
 import React from 'react';
- // import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import About from './components/About'; // Assure-toi d'importer correctement le composant About depuis son emplacement
+import About from './components/About';
 import Home from './components/Home';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Importez le fichier CSS de Bootstrap
-import 'jquery/dist/jquery.min.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Exercices from './components/Exercices';
 
 function App() {
   return (
@@ -18,17 +13,14 @@ function App() {
         <header className="App-header">
           <Routes>
             <Route path="/" element={<Home />} />
-          </Routes>
-          {/* Utilise <Routes> pour envelopper tes routes */}
-          <Routes>
             <Route path="/about" element={<About />} />
+            <Route path="/exercices" element={<Exercices />} />
           </Routes>
         </header>
       </div>
     </Router>
   );
 }
-
 
 export default App;
 
