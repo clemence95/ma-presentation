@@ -73,7 +73,7 @@ function Exercices() {
                 <button onClick={handleClickBonjour}>Bonjour</button>
             </div>
             <div>{message}</div>
-            
+
             {/* Affichage du compteur */}
             <div>
                 <h2>Compteur: {count}</h2>
