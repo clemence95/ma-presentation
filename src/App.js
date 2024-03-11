@@ -5,6 +5,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Exercices from './components/Exercices';
 import Api from './components/Api';
+import Themoviedb from './components/Themoviedb';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/exercices" element={<Exercices />} />
             <Route path="/api" element={<Api />} />
+            <Route path="/Themoviedb" element={<Themoviedb />} />
           </Routes>
         </header>
       </div>
