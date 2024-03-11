@@ -21,7 +21,7 @@ function AxiosExample() {
 
   return (
     <div>
-      <h2>Axios Example</h2>
+      <h2>Axios Exemple</h2>
       <ul>
         {movies.map(movie => (
           <li key={movie.id}>{movie.title}</li>

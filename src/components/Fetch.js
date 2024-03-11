@@ -21,7 +21,7 @@ function FetchExample() {
 
   return (
     <div>
-      <h2>Fetch Example</h2>
+      <h2>Fetch Exemple</h2>
       <ul>
         {movies.map(movie => (
           <li key={movie.id}>{movie.title}</li>
