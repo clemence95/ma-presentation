@@ -22,10 +22,10 @@ function Navigation() {
                             <Link className="nav-link" to="/about">À propos</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/music">Musiques</Link>
+                            <Link className="nav-link" to="/api">API</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/films">Films</Link>
+                            <Link className="nav-link" to="/themoviedb">TheMoviedb</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/exercices">Exercices</Link>
