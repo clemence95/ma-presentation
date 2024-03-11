@@ -5,8 +5,8 @@ function MyComponent() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // Effectue une requête GET vers l'API
-    axios.get('https://api.exemple.com/data')
+    // Effectue une requête GET vers l'API JSONPlaceholder
+    axios.get('https://jsonplaceholder.typicode.com/posts')
       .then(response => {
         // Met à jour le state avec les données reçues de l'API
         setData(response.data);
@@ -21,7 +21,7 @@ function MyComponent() {
       <h1>Données de l'API</h1>
       <ul>
         {data.map(item => (
-          <li key={item.id}>{item.name}</li>
+          <li key={item.id}>{item.title}</li>
         ))}
       </ul>
     </div>
@@ -29,3 +29,4 @@ function MyComponent() {
 }
 
 export default MyComponent;
+
