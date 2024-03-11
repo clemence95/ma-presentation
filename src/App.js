@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import About from './components/About';
 import Home from './components/Home';
 import Exercices from './components/Exercices';
+import Api from './components/Api';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/exercices" element={<Exercices />} />
+            <Route path="/api" element={<Api />} />
           </Routes>
         </header>
       </div>
