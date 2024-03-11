@@ -18,7 +18,7 @@ function MyComponent() {
 
   return (
     <div>
-      <h1>Données de l'API</h1>
+      <h1>Données de l'API avec Axios</h1>
       <ul>
         {data.map(item => (
           <li key={item.id}>{item.title}</li>
