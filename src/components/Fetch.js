@@ -4,7 +4,7 @@ function FetchExample() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch(`http://api.themoviedb.org/3/search/movie?api_key=f33cd318f5135dba306176c13104506a&query=avenger`)
+    fetch(`http://api.themoviedb.org/3/search/movie?api_key=f33cd318f5135dba306176c13104506a&query=b`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Erreur lors de la récupération des films');
